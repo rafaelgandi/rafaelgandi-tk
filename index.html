@@ -1,0 +1,262 @@
+﻿<!doctype html>
+<!--paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/-->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js desktop" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8"> 
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Rafael Gandionco</title>
+  <meta name="description" content="rafael gandionco website portfolio web development photography">
+  <meta name="author" content="rafael gandionco">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!--[if lte IE 8 ]><script>window.IS_OLDIE=!0</script><![endif]-->
+  <script>
+	(function () {	 // check for mobile
+		try {
+			var d = document,
+				// See: http://localstreamer.posterous.com/javascript-code-snippet-how-to-detect-all-mob
+				mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase())),
+				// See: http://andylangton.co.uk/articles/javascript/get-viewport-size-javascript/
+				width = self.innerWidth || d.documentElement.clientWidth || d.getElementsByTagName('body')[0].clientWidth;	
+			if ((parseInt(width,10) < 1050 || mobile) && !self.IS_OLDIE) {self.location = 'm.html';document.body.className='hide';}		
+		}catch(e){}
+		})();
+	(new Image()).src = 'images/me.jpg';
+	(new Image()).src = 'images/dancing_chicken.gif';
+	(new Image()).src = 'images/pixdave.jpg';
+   </script>		
+  <!-- CSS: implied media="all" -->
+  <link rel="stylesheet" href="css/rafael.css?v020112">
+</head>
+<body scroll="no">
+  <!--[if lt IE 7]>	
+	<script>window.IS_IE6=!0</script>
+	<style type="text/css">
+		#main_navigation_con {display: none;}
+		#oldie_msg {display: block;}
+	</style>
+  <![endif]-->
+  <noscript>
+	<style type="text/css">
+		.page_container {display: block;}
+		#oldie_msg {display: block;z-index: 9999999;}
+	</style>
+  </noscript>
+  <div id="oldie_msg"><p>The browser you are using is very old or your javascript is turned off :(</p></div>
+  <div id="container" role="main">
+	<div id="contactus_other_links">
+		<a href="http://ph.linkedin.com/pub/rafael-gandionco/45/a17/670" rel="external">
+			 <img src="http://www.linkedin.com/img/webpromo/btn_profile_bluetxt_80x15.png" width="80" height="15" border="0" alt="View rafael gandionco's profile on LinkedIn">
+		</a>		
+	</div>
+	<div id="main_navigation_con" class="roman_font glow fixed-bottom">
+		<nav>
+			<ul> 
+				<li><a href="#_1" class="nav_link active_nav" data-raf-page="_1">Who me?</a></li>
+				<li><a href="#_2" class="nav_link" data-raf-page="_2">Weapons of choice</a></li>
+				<li><a href="#_3" class="nav_link" data-raf-page="_3">Web projects</a></li>
+				<li><a href="#_4" class="nav_link" data-raf-page="_4">Photography</a></li>
+				<li class="no_border"><a href="#_5" class="nav_link" data-raf-page="_5">Contact me!</a></li>				
+			</ul>
+		</nav>
+	</div>
+	<div id="page_1" class="page_container">
+		<div class="page_contents center padding_top_100" style="width: 735px;">
+			<p id="init_msg" class="align-c">
+				<img src="images/me.jpg" style="vertical-align:bottom;" alt="rafael's head" id="rafaels_head" />
+				Hi, I'm <span class="green_highlight">Rafael Gandionco.</span> A web developer from the Philippines.
+				<br /><br />		
+				I've been doing <span class="green_highlight">web development</span> stuff professionally for more than <script>document.write((new Date()).getFullYear()-2009)</script> years now.
+				<br />
+				I mainly specialize on frontend development using <span class="green_highlight">Javascript</span> <sup style="font-size:12px;color:#ccc;">(jQuery, JSON, etc...)</sup>,  
+				<span class="green_highlight">HTML 5</span> and <span class="green_highlight">other cool open web technologies.</span>
+				<br /><br />
+				I also do a little bit of <span class="green_highlight">photography</span> as a hobby, check out some of my work 
+				<span class="green_highlight">
+				<a rel="external" target="_blank" href="http://www.flickr.com/photos/rafaelgandi/" 
+					onmousedown="
+						if (typeof IS_IE6 !== 'undefined') {return !0;}
+						jQuery(this).removeAttr('target');
+						navigate('_4');
+						jQuery('a.nav_link').removeClass('active_nav');
+						jQuery('a[data-raf-page=_4]').addClass('active_nav');
+						return !1;"
+					onclick="return !1;"	
+					style="text-decoration:none;color:#666666;">here</a>.
+				</span>
+				<!-- Show my email to ie6 and browsers with javascript turned off -->
+				<noscript><br /><br />Email: <span class="green_highlight">rafaelgandi AT gmail DOTCOM</span></noscript>
+				<!--[if lte IE 6 ]><br /><br />Email: <span class="green_highlight">rafaelgandi AT gmail DOTCOM</span><![endif]-->
+			</p>
+			<div class="big_font align-c" style="padding-top: 30px;letter-spacing:20px;color:#E7E7E7;">***</div>
+		</div>
+	</div>
+	
+	
+	<!-- Weapons page -->
+	<div id="page_2" class="page_container" >	
+		<p style="padding-left:20px;padding-top: 10px;">Here are a few awesome tools I use to build web applications and websites...</p>
+		<div align="center" id="weapons" data-raf-showchicken="yes">		
+			<ul style="list-style:none;">
+				<li>
+					<a href="http://jquery.com" rel="external"><img src="images/fff.gif" class="" data-raf-src="images/weapons/jquery.png" alt="" /></a> 
+					<a href="http://www.w3.org/html/logo/" rel="external"><img src="images/fff.gif" class="" data-raf-src="images/weapons/html5.png"  alt="" /></a> 
+					<a href="http://notepad-plus-plus.org/" rel="external"><img src="images/fff.gif" class="" data-raf-src="images/weapons/npp.jpg"  alt="" /></a> 
+				</li>
+				<li>
+					<a href="http://www.businesscatalyst.com/" rel="external"><img src="images/fff.gif" class="" data-raf-src="images/weapons/bc.jpg" alt="" /></a> 
+					<a href="http://codeigniter.com/" rel="external"><img src="images/fff.gif" class="" data-raf-src="images/weapons/ci.jpg"  alt="" /></a> 
+					<a href="http://www.mysql.com/" rel="external"><img src="images/fff.gif" class="" data-raf-src="images/weapons/mysql.jpg" alt="" /></a> 
+					
+				</li>							
+			</ul>						
+		</div>
+		<div id="weapons_loading_con" class="glow align-c roundies10 center_box">
+			<p>A few images are still loading...</p>
+			<img src="images/dancing_chicken.gif" alt="Loading images..."/>
+		</div>
+	</div>		
+	
+	
+	<!-- Web Projects page -->
+	<div id="page_3" class="page_container">
+		<div class="page_contents center">			
+			<div class="proj_container">
+				<ul id="quad"></ul>
+			</div>
+		</div>
+		<div id="proj_msg" class="glow align-c roundies10 center_box" onmousedown="jQuery(this).stop().fadeOut();">
+			<p style="padding: 5px;background-color:#DCFFA4;">A few web development projects I was a part of...</p>
+			<img src="images/pixdave.jpg" alt="A few web development projects I was a part of..."/>
+		</div>	
+	</div>	
+	
+	
+	<!-- Photography page -->
+	<div id="page_4" class="page_container">
+		<div class="page_contents center padding_top_100">
+			<div id="flickr_photos_con">
+				<div id="flickr_photos" style="padding-left: 30px;"></div>
+			</div>
+			<div class="clr"></div>
+		</div>
+		<p class="align-c" style="padding-top: 40px;">			
+			<span data-raf-dir="back" class="pointer flickr_controls">Back</span> | 
+			<span data-raf-dir="forward" class="pointer flickr_controls">Forward</span>
+		</p>
+		
+	</div>
+	
+	<!-- Contact me page -->
+	<div id="page_5" class="page_container">
+		<div class="page_contents center">
+			<p class="align-c padding_top_100 email_add">				
+				<script type="text/javascript">
+				//<![CDATA[
+				<!--
+				// See: http://hivelogic.com/enkoder/index.php
+				var x="function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
+				"harAt(i);}catch(e){}}return o;}f(\")\\\"function f(x,y){var i,o=\\\"\\\\\\\""+
+				"\\\\,l=x.length;for(i=0;i<l;i++){y%=127;o+=String.fromCharCode(x.charCodeAt" +
+				"(i)^(y++));}return o;}f(\\\"\\\\\\\\\\\\n\\\\\\\\000\\\\\\\\023\\\\\\\\004\\"+
+				"\\\\\\037\\\\\\\\026\\\\\\\\032\\\\\\\\001X\\\\\\\\000\\\\\\\\n\\\\\\\\020\\"+
+				"\\\\\\016\\\\\\\\036\\\\\\\\020\\\\\\\\023V\\\\\\\\\\\"\\\\=c#lwca5U(fmdb{\\"+
+				"\\\\\\177+`rrts{\\\\\\\\177xt\\\\\\\\177u]yrAHN\\\\\\\\rGJK{\\\\\\\\n\\\\\\" +
+				"\\t^BXAK\\\\\\\\022l\\\\\\\\023w^U\\\\\\\\\\\\\\\\Z\\\\\\\\027U\\\\\\\\\\\\" +
+				"\\\\\\\\\\\\033g\\\\\\\\036\\\\\\\\003L^& '/#$(#!\\\\\\\\t-&-$\\\\\\\\\\\"\\"+
+				"\\a3>?o{4huqbj`\\\"\\\\,110)\\\"(f};)lo,0(rtsbus.o nruter};)i(tArahc.x=+o{)" +
+				"--i;0=>i;1-l=i(rof}}{)e(hctac};l=+l;x=+x{yrt{)54=!)31/l(tAedoCrahc.x(elihw;" +
+				"lo=l,htgnel.x=lo,\\\"\\\"=o,i rav{)x(f noitcnuf\")"                          ;
+				while(x=eval(x));
+				//-->
+				//]]>
+				</script>
+			</p>
+			<div style="width:800px;" class="padding_top_100 center">
+				<div style="width:50%" class="social left align-c">
+					<a href="http://www.facebook.com/rafaelgandi" rel="external" title="Lets be friends on facebook">
+						<img src="images/social_icons/fb.png" alt="Facebook" />
+					</a>					
+				</div>
+				<div style="width:50%" class="social right align-c">
+					<a href="http://www.flickr.com/photos/rafaelgandi/" rel="external" title="Check out some of my photos on flickr" >
+						<img src="images/social_icons/flickr.png" alt="Flickr"/>
+					</a>					
+				</div>	
+				<div class="clr"></div>
+			</div>
+		</div>	
+	</div>
+	
+	
+	<!-- side images-->
+	<img src="images/homer1.jpg" class="absolute" alt="" style="top:334px;left:2964px;" />
+	<img src="images/homer2.jpg" class="absolute" alt="" style="top:1763px;left:3354px;" />
+	<img src="images/meme1.gif" class="absolute" alt="" style="top:1073px;left:2984px;" />
+	<img src="images/meme2.gif" class="absolute" alt="" style="top:790px;left:657px;" />
+	
+	
+  </div> <!--! end of #container -->
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write("<script src='js/jquery-1.7.1.min.js'>\x3C/script>")</script>
+  <script src="js/plugins.js?v020112_2"></script>
+  <script src="js/rafael.js?v020212_3"></script>
+  <script type="text/html" id="proj_tpl">
+	<li>
+		<div class="wrap">
+			<span class="img_loader i form-field-highlight">Loading...</span>
+			<img class="back" src="images/fff.gif" data-raf-src="{img}"/>
+			<span class="comment">
+				<header>{header}</header>
+				<span>URL: {link}</span>
+			</span>
+		</div>						
+	</li>
+  </script>
+  <script type="text/html" id="more_photos_tpl">
+	<div class="flickr_img" style="border:0;padding:100px;">
+		<p style="vertical-align:middle;">
+			More on 
+			<a style="text-decoration:none;" href="http://www.flickr.com/photos/rafaelgandi/" target="_blank">flickr</a> and 
+			<a style="text-decoration:none;" href="http://500px.com/rafaelgandi/" target="_blank">500px...</a>
+		</p>
+	</div>
+  </script>
+  <script type="text/html" id="flickr_photos_tpl">
+	<div class="flickr_img">
+		<span style="padding:10px 185px;" class="img_loader i">Loading...</span>
+		<a href="{link}" target="_blank" title="{title}">
+			<img src="{img}" alt="{title}" class="hide" />
+		</a>
+	</div>
+  </script>
+  <!-- end scripts-->
+  <!--[if lt IE 7 ]>
+    <script src="js/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+  <script>
+  jQuery(function ($) {
+	$.getScript('http://j.maxmind.com/app/geoip.js', function () {
+		if (typeof window.geoip_latitude === 'undefined') {return;}
+		$.get('track.php?lat='+geoip_latitude()+'&long='+geoip_longitude());
+	});
+  });
+  </script>
+</body>
+</html>
