@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8"> 
   <title>Rafael Gandionco</title>
+  <!-- See: http://debugfix.com/2011/11/android-browser-css-position-fixed-bug-solved/ -->
+  <meta name="viewport" content="width=100%, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <meta name="description" content="rafael gandionco website portfolio web development photography">
   <meta name="author" content="rafael gandionco">
 
@@ -22,7 +24,8 @@
     <header class="zebedee-handle glow">Who me?</header>
     <section class="zebedee-content">
 		<p id="init_msg" class="align-c">
-			<img src="images/me.jpg" style="vertical-align:bottom;margin-top:5px;" alt="" title=""/><br>
+			<span id="rafaels_head" style="margin:0 auto;display:block;margin-top:8px;">&nbsp;</span>
+			<br>
 			Hi, I'm <span class="green_highlight">Rafael Gandionco.</span> A web developer from the Philippines.
 			<br><br>		
 			I've been doing <span class="green_highlight">web development</span> stuff professionally for more than <script>document.write((new Date()).getFullYear()-2009)</script> years now.
@@ -104,7 +107,7 @@ Zepto(document).ready(function () {
 		var html = '',
 			//trigger = 'touchstart';
 			//trigger = 'touchend';
-			trigger = 'mousedown';
+			trigger = 'click';
 		html += '<ul id="mobile_project_list" style="list-style:none;">';
 		Zepto.each(data, function (i, proj) {
 			

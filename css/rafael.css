@@ -687,6 +687,21 @@ body, h1, h2, h3, h4, h5, p {
 .particle.orange  {background-color:rgba(221, 137, 000, 1);}
 .particle.red     {background-color:rgba(189, 058, 000, 1);}
 
+/* LM: 01-03-13 [Added new selfie on portfolio website]*/
+#rafaels_head {
+	border-radius: 80px;
+	vertical-align:middle;
+	background: url("../images/me2.jpg") no-repeat center #fff;
+	overflow: hidden;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+} 
+.oldie #rafaels_head {
+	behavior: url(css/PIE.htc);
+	position:relative; /* Added to make PIE.htc work properly on IE */
+} 
+
 
 
 /* MOBILE SITE CSS (LM: 01-11-12)*/
@@ -696,6 +711,8 @@ html.mobile, .mobile body {
 	font-weight: 400;
 	overflow-y: visible !important;
 	width: auto;
+	/* See: http://phonegap.com/2011/07/19/craftyjs-on-android-device-using-phonegap/   [remove highlight on element when tapped] */
+	-webkit-tap-highlight-color:rgba(0,0,0,0);	
 }
 
 .mobile p {
