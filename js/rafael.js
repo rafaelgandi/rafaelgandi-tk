@@ -1,6 +1,6 @@
 /* 
 	rafael.js
-	LM: 02-02-2012
+	LM: 02-17-2015
 	Author: Rafael Gandionco
 		
 		    __         __
@@ -218,54 +218,9 @@ jQuery(function ($) {
 	})();
 	
 	// PHOTOGRAPHY PAGE //
-	(function () {			
-		setTimeout(function () { // dont run this piece of code right away because the loading of images from flickr is quite slow
-			// See: http://www.jackbarber.co.uk/blog/5/Blog
-			// See: http://www.justinspradlin.com/programming/create-a-photostream-using-jquery-and-the-flickr-api/
-			var flickr_id = '12972564@N00',
-				flickr_key = '2971e42111503ba96957061ddcf356cc',
-				flickr_feeds_uri = 'http://api.flickr.com/services/feeds/photos_public.gne?id='+flickr_id+'&format=json&jsoncallback=?',
-				//flickr_feeds_uri = 'js/dummy.json',
-				photosTpl = document.getElementById('flickr_photos_tpl').innerHTML,
-				html = '';
-			$.getJSON(flickr_feeds_uri,function(data){  
-				var $photosCon = $('#flickr_photos_con'),
-					$flickrImgs,
-					$lastPhoto,
-					$firstPhoto,
-					_speed = 4e3;
-				$.each(data.items, function (i,item) {  
-					html += t(photosTpl, {
-						'link' : item.link,
-						'title' : item.title,
-						'img' : item.media.m
-					}); 
-				}); 
-				html += document.getElementById('more_photos_tpl').innerHTML;
-				$('#flickr_photos').append(html);
-				
-				$flickrImgs = $photosCon.find('div.flickr_img');
-				$lastPhoto = $flickrImgs.last();
-				
-				$('#page_4').on('mouseenter mouseleave', 'span.flickr_controls', function (e) {			
-					var dir = $.trim(this.getAttribute('data-raf-dir'));
-					if (e.type === 'mouseenter') {
-						$photosCon.scrollTo((dir === 'back') ? 0 : $lastPhoto, _speed);				
-					}
-					else {
-						$photosCon.clearQueue().stop();
-					}
-				});
-				
-				// handle stuff while image is still loading //
-				$flickrImgs.find('img').load(function () {
-					var $me = $(this);
-					$me.parent().prev('span.img_loader').remove();
-					$me.parents('div.flickr_img').addClass('glow polaroid');
-					$me.hide().fadeIn();						
-				});	
-			}); 	
-		}, 1e3);		
+	(function () {
+		// LM: 02-17-2015
+		// Removed flickr API script
 	})();		
 	
 	// WEAPONS PAGE //
